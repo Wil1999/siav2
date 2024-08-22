@@ -1,0 +1,52 @@
+<div class="menuDesktop">
+  <header style="height: 80px" [@topBottom]="isScrolled">
+      <div class="menuDesktop_left" style="display: flex;">
+          <div>
+              <a>
+                  <img [src]="isScrolled=='top'||isScrolled=='bottom'?'assets/logov2bn-sia.png':'assets/logov2-sia.png'" alt="Logotipo SIA">
+              </a>
+          </div>
+      </div>
+      <div class="menuDesktop_left">
+          <a>
+              <img [src]="isScrolled=='top'||isScrolled=='bottom'?'assets/logobn-senamhi.png':'assets/logo-senamhi.png'" alt="Logotipo SENAMHI">
+          </a>
+      </div>
+  </header>
+</div>
+
+<!--
+<mat-toolbar>
+  <div class="toolbar-content" >
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+  </button>
+      <div class="title">
+          SISTEMA DE INFORMACIÓN AGROMETEOROLÓGICA
+      </div>
+      <img src="assets/image/senamhi-logo.png" class="imagen">
+  </div>
+</mat-toolbar>
+
+
+
+<div class="menuDesktop">
+  <header style="height: 80px">
+      <div class="menuDesktop_left">
+          <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+          <a>
+              <img src="assets/image/logo-SIA-little.png" alt="Logotipo SIA">
+          </a>
+          <a>SISTEMA DE INFORMACIÓN AGROMETEOROLÓGICA</a>
+      </div>
+      <div class="menuDesktop_left">
+          <a>
+              <img src="https://www.senamhi.gob.pe/public/images/logo-senamhi.svg" alt="Logotipo SENAMHI">
+          </a>
+      </div>
+  </header>
+</div>
+
+-->

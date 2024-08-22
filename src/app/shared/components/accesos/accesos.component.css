@@ -1,0 +1,96 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.example-disabled {
+  display: inline-block;
+}
+.example-button-grid {
+    padding: 20px;
+    display: contents;
+  /*  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  Se establece el tamaño mínimo de las columnas y se permite que se ajusten automáticamente */
+    grid-gap: 20px; /* Espacio entre los botones */
+    margin-left: 13%;
+    margin-right: 13%;
+    text-align: center;
+
+  }
+  .buttonmas {
+    height: 800px;
+    width: 180px;
+    margin-right: 15px;
+  }
+
+  .example-button-grid button {
+    height: 180px;
+    width: 180px;
+    margin-right: 15px;
+
+  }
+  .access-title h3 {
+    font-family: Poppins, sans-serif;
+    font-size: 24px; /* Tamaño de fuente más grande */
+    font-weight: normal; /* Texto en negrita */
+    color: #000000; /* Color del texto */
+    margin-bottom: 10px; /* Espacio inferior */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    margin-left: 13%;
+    margin-right: 13%;
+  }
+  .text-wrapper{
+    color: black;
+    letter-spacing: normal !important;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .container {
+  display: contents;
+ /* grid-template-columns: 1fr 1fr 1fr;  Esto divide el espacio horizontal en tres partes iguales */
+}
+
+.panel {
+  /* border: 1px solid black;  Para visualizar los límites de los paneles */
+  padding: 20px; /* Ajusta el relleno como desees */
+}
+.modulos h3{
+  font-size: 20px; /* Tamaño de fuente más grande */
+  color: olivedrab; /* Color del texto */
+  margin-bottom: 15px;
+}
+
+
+/*VER MAS*/
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+.icon-wrapper{
+  display: inline-flex;
+}
+
+.icon-wrapper img{
+  height: 80px;
+}
+
+#btn-evapo:focus {
+  background-color: #E8A852; /* O cualquier estilo que desees para el botón enfocado */
+  outline: none; /* Opcional, para eliminar el borde por defecto */
+}
+
+.button-with-icon{
+  border: none !important;
+}
+
+.button-with-icon:hover{
+  transform: scale(1.12);
+  transition-duration: 1000ms !important;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 2px;
+  background-color: white !important;
+}

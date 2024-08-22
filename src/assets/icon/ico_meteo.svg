@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="27px" viewBox="0 0 18 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="75.8975327%" cy="83.1225391%" fx="75.8975327%" fy="83.1225391%" r="51.6680559%" gradientTransform="translate(0.758975,0.831225),scale(1.000000,0.622911),rotate(90.000000),scale(1.000000,1.080421),translate(-0.758975,-0.831225)" id="radialGradient-1">
+<!--            <stop stop-color="#2C5801" offset="0%"></stop>-->
+            <stop stop-color="#006500" offset="100%"></stop>
+<!--            <stop stop-color="#A2E600" offset="100%"></stop>-->
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-Copy-5" transform="translate(1.000000, 1.000000)">
+            <path d="M9.11825785,25.6247747 C3.44314201,17.3509971 0.427256336,11.713258 0.0706008163,8.71155753 C-0.464382463,4.20900676 2.00581823,-0.15539008 8.68579148,0.00424929091 C15.3657647,0.163888662 18.0533744,8.30647021 14.1624743,12.7843554 C10.2715742,17.2622405 9.6388308,17.7923828 9.11825785,20.4363395 C8.77120921,22.1989773 8.77120921,23.9284557 9.11825785,25.6247747 Z" id="Path" stroke="#000000" fill="url(#radialGradient-1)"></path>
+            <text id="M-Copy" font-family="Arial-Black, Arial Black" font-size="10" font-weight="700" letter-spacing="0.142857149" fill="#000000">
+                <tspan x="4" y="12">M</tspan>
+            </text>
+            <text id="M" font-family="Arial-Black, Arial Black" font-size="10" font-weight="700" letter-spacing="0.142857149" fill="#FFFFFF">
+                <tspan x="3" y="11">M</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

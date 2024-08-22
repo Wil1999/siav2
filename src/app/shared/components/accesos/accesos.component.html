@@ -1,0 +1,200 @@
+<div class="font-poppins w-screen flex ">
+  <div class="access-title text-center justify-center self-center font-bold font-poppins text-[28px] mt-10 mb-10 ml-10">
+      <div>ACCESO RÁPIDO</div>
+  </div>
+  <div class="example-button-grid">
+      <div class="container">
+          <div class="panel">
+              <div class="modulos">
+                  <h3>Monitereo</h3>
+              </div>
+              <div>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                      (click)="redirectToProducts('/v2/monitoreo/evapotranspiracion')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/agua-limpia.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Evapotranspiración
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/monitoreo/indice-humedad')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/jardineria.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Índice de Humedad
+                      </div>
+                  </button>
+
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/monitoreo/monitoreo-fenologico')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/casa-verde.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Monitoreo Fenológico
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/monitoreo/monitoreo-temperatura')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/molino.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Monitoreo Temperatura
+                      </div>
+                  </button>
+
+                  <!-- <mat-accordion >
+                      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="acordeon" style="max-width: 850px;">
+                          <mat-expansion-panel-header>
+                              <mat-panel-title>
+                                  Ver más Monitoreo
+                              </mat-panel-title>
+
+                          </mat-expansion-panel-header>
+                          <button mat-stroked-button color="accent" style="max-height: 110px; max-width: 180px;">
+                              <div class="icon-wrapper">
+                                  <img src="assets/icon/agricultura.png">
+                              </div>
+                              <div class="text-wrapper">
+                                  Año seco vs Año humedo
+                              </div>
+                          </button>
+                          <button mat-stroked-button color="accent"style="max-height: 110px; max-width: 180px;">
+                              <div class="icon-wrapper">
+                                  <img src="assets/icon/riego.png">
+                              </div>
+                              <div class="text-wrapper">
+                                  Estación Crecimiento
+                              </div>
+                          </button>
+                          <button mat-stroked-button color="accent" style="max-height: 110px; max-width: 180px;">
+                              <div class="icon-wrapper">
+                                  <img src="assets/icon/encendiendo.png">
+                              </div>
+                              <div class="text-wrapper">
+                                  Duración Estación Crecimiento
+                              </div>
+                          </button>
+
+                          <button mat-stroked-button color="accent" style="max-height: 110px; max-width: 180px;">
+                              <div class="icon-wrapper">
+                                  <img src="assets/icon/encendiendo.png">
+                              </div>
+                              <div class="text-wrapper">
+                                  Monitoreo Fenológicos
+                              </div>
+                          </button>
+
+                      </mat-expansion-panel>
+                  </mat-accordion>-->
+
+              </div>
+
+          </div>
+          <div class="panel">
+              <div class="modulos">
+                  <h3>Pronóstico</h3>
+              </div>
+              <div>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/pronostico/pronostico-climatico')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/cheque.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Pronostico Climático
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/pronostico/riesgo-cultivo')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/energia-verde.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Riesgo por Cultivo
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/pronostico/radiacion-uv')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/encendiendo.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Radiaciones UV
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/riego.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Probabilidad Climático
+                      </div>
+                  </button>
+              </div>
+          </div>
+
+          <div class="panel">
+              <div class="modulos">
+                  <h3>PGA</h3>
+              </div>
+              <div>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/pga/datos-hidrometereologicos')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/maiz.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Datos Hidrometeorológicos
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/pga/satelite-goes')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/bosque.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Sátele GOES16
+                      </div>
+                  </button>
+              </div>
+          </div>
+          <!-- OTROS-->
+          <div class="panel">
+              <div class="modulos">
+                  <h3>Otros</h3>
+              </div>
+              <div>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/otros/estudios')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/plano.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Estudios
+                      </div>
+                  </button>
+                  <button mat-stroked-button color="accent" class="button-with-icon"
+                  (click)="redirectToProducts('/v2/otros/acerca-de')">
+                      <div class="icon-wrapper">
+                          <img src="assets/icon/plano.png">
+                      </div>
+                      <div class="text-wrapper">
+                          Acerca De
+                      </div>
+                  </button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!-- prueba copy -->
+
+<!-- --- -->

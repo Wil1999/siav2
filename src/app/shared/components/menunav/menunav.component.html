@@ -1,0 +1,118 @@
+<div class="flex flex-row h-screen w-full overflow-hidden">
+  <div (mouseenter)="toggleSidebar('MENU_P')" (mouseleave)="hideSidebar('MENU_P')" class="absolute flex h-screen w-full z-50 -left-56 max-w-[18rem] flex-col py-4 bg-customVerdeSia text-white" [@openClose]="showMenuA">
+    <nav class="flex min-w-[240px] flex-col gap-1 font-sans text-base font-normal">
+      <div role="button" (click)="returnToInicio()"
+        class="flex justify-between w-full items-center p-4 leading-tight transition-all outline-none text-start hover:bg-stone-900 hover:ease-in-out hover:duration-500">
+        <div class="text-lg font-semibold">INICIO</div>
+        <div class="justify-self-end">
+          <svg class="h-6 w-6"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />  <polyline points="9 22 9 12 15 12 15 22" /></svg>
+        </div>
+      </div>
+      <div role="button" (mouseenter)="toggleSidebar('MENU_M')" (mouseleave)="hideSidebar('MENU_M')"
+        class="flex justify-between w-full items-center p-4 leading-tight transition-all outline-none text-start hover:bg-stone-900 hover:ease-in-out hover:duration-500" >
+        <div class="text-lg font-semibold">MONITOREO</div>
+        <div class="justify-self-end">
+          <svg class="h-6 w-6"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />  <line x1="8" y1="21" x2="16" y2="21" />  <line x1="12" y1="17" x2="12" y2="21" /></svg>
+        </div>
+      </div>
+      <div role="button" (mouseenter)="toggleSidebar('MENU_PRO')" (mouseleave)="hideSidebar('MENU_PRO')"
+        class="flex justify-between w-full items-center p-4 leading-tight transition-all outline-none text-start hover:bg-stone-900 hover:ease-in-out hover:duration-500">
+        <div class="text-lg font-semibold">PRONÓSTICO</div>
+        <div class="justify-self-end">
+          <svg class="h-6 w-6"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <circle cx="12" cy="12" r="5" />  <line x1="12" y1="1" x2="12" y2="3" />  <line x1="12" y1="21" x2="12" y2="23" />  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />  <line x1="1" y1="12" x2="3" y2="12" />  <line x1="21" y1="12" x2="23" y2="12" />  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /></svg>
+        </div>
+      </div>
+      <div role="button" (mouseenter)="toggleSidebar('MENU_PGA')" (mouseleave)="hideSidebar('MENU_PGA')"
+        class="flex justify-between w-full items-center p-4 leading-tight transition-all outline-none text-start hover:bg-stone-900 hover:ease-in-out hover:duration-500">
+        <div class="text-lg font-semibold">PGA</div>
+        <div class="justify-self-end">
+          <svg class="h-6 w-6"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <ellipse cx="12" cy="5" rx="9" ry="3" />  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" /></svg>
+        </div>
+      </div>
+      <div role="button" (mouseenter)="toggleSidebar('MENU_O')" (mouseleave)="hideSidebar('MENU_O')"
+        class="flex justify-between w-full items-center p-4 leading-tight transition-all outline-none text-start hover:bg-stone-900 hover:ease-in-out hover:duration-500">
+        <div class="text-lg font-semibold">OTROS</div>
+        <div class="justify-self-end">
+          <svg class="h-6 w-6"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"/>
+          </svg>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div (mouseenter)="staySidebar('MENU_M')" class="absolute -left-72 flex h-screen w-full z-20 max-w-[15rem] flex-col bg-stone-900 py-4 text-white" [@showSubMenu]="showMenuM">
+    <nav class="flex min-w-[240px] flex-col mx-0 gap-1 w-full h-screen font-sans text-base font-normal">
+      <div role="button" (click)="setTitleSubtitle(0)" [routerLink]="['monitoreo/evapotranspiracion']"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500" >
+        <div class="text-sm">EVAPOTRANSPIRACION</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(1)" routerLink="monitoreo/indice-humedad"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">INDICE DE HUMEDAD</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(2)" routerLink="monitoreo/monitoreo-fenologico"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">MONITOREO FENOLÓGICO</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(3)" routerLink="monitoreo/monitoreo-temperatura"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">MONITOREO TEMPERATURA</div>
+      </div>
+    </nav>
+  </div>
+  <div (mouseenter)="staySidebar('MENU_PRO')" class="absolute -left-72 flex h-screen w-full z-20 max-w-[15rem] flex-col bg-stone-900 py-4 text-white" [@showSubMenu]="showMenuPro">
+    <nav class="flex min-w-[240px] flex-col mx-0 gap-1 w-full h-screen font-sans text-base font-normal">
+      <div role="button" (click)="setTitleSubtitle(4)" routerLink="pronostico/pronostico-climatico"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">PRONÓSTICO CLIMÁTICO</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(5)" routerLink="pronostico/riesgo-cultivo"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">RIESGO POR CULTIVO</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(6)" routerLink="pronostico/radiacion-uv"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">RADIACIONES UV</div>
+      </div>
+    </nav>
+  </div>
+  <div (mouseenter)="staySidebar('MENU_PGA')" class="absolute -left-72 flex h-screen w-full z-20 max-w-[15rem] flex-col bg-stone-900 py-4 text-white" [@showSubMenu]="showMenuPGA">
+    <nav class="flex min-w-[240px] flex-col mx-0 gap-1 w-full h-screen font-sans text-base font-normal">
+      <div role="button" (click)="setTitleSubtitle(8)" routerLink="pga/datos-hidrometereologicos"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">DATOS HIDROMETEREOLÓGICOS</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(9)" routerLink="pga/satelite-goes"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">SATÉLITE GOES16</div>
+      </div>
+    </nav>
+  </div>
+  <div (mouseenter)="staySidebar('MENU_O')" class="absolute -left-72 flex h-screen w-full z-20 max-w-[15rem] flex-col bg-stone-900 py-4 text-white" [@showSubMenu]="showMenuOtros">
+    <nav class="flex min-w-[240px] flex-col mx-0 gap-1 w-full h-screen font-sans text-base font-normal">
+      <div role="button" (click)="setTitleSubtitle(10)" routerLink="otros/estudios"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">ESTUDIOS</div>
+      </div>
+      <div role="button" (click)="setTitleSubtitle(11)" routerLink="otros/acerca-de"
+        class="flex justify-between w-full px-10 py-3 leading-tight outline-none text-start hover:bg-customVerdeSia hover:ease-in-out hover:duration-500">
+        <div class="text-sm">ACERCA DE</div>
+      </div>
+    </nav>
+  </div>
+  <!-- Espacio del contenido -->
+  <div (mouseenter)="hideAll()" class="relative w-full left-16 flex z-20 h-full overflow-y-scroll overflow-x-hidden" [@contain]="showContent">
+    <!-- Header -->
+     <div class="w-full h-screen flex flex-col">
+      <div class="h-[40%] bg-[url('assets/bg-header6.jpg')] bg-cover bg-no-repeat bg-center">
+        <div class="w-full h-full bg-black bg-opacity-40">
+          <app-header title="{{title}}" subtitle="{{subtitle}}"></app-header>
+        </div>
+      </div>
+      <div class="h-full w-full max-w-screen-xl">
+        <!-- contenido -->
+         <router-outlet></router-outlet>
+      </div>
+     </div>
+  </div>
+  </div>
